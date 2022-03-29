@@ -31,7 +31,7 @@ function Nav() {
                     </li>
                     {categories.map((category) => (
                         <li className="mx-1" key={category.name}>
-                            <span> {category.name} </span>
+                            <span> onClick={category.name} </span>
                         </li>
                     ))}
                 </ul>
