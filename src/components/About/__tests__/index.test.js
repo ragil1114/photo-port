@@ -6,7 +6,7 @@ import About from '..';
 afterEach(cleanup);
 
 describe('About component', () => {
-    // First Test
+    // First Baseline Test to verify that the component is rendering.
     it('renders', () => {
         render(<About />);
     });
