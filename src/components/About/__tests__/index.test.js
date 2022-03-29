@@ -11,4 +11,9 @@ describe('About component', () => {
         render(<About />);
     });
     // Second 'Test Case' aka 'Snapshot' Test to verify that the expected and actual outcomes match.
+    it('matches snapshot DOM node structure', () => {
+        // render About
+        const { asFragment } = render(<About />);
+        expect(asFragment()).toMatchSnapshot();
+    });
 })
