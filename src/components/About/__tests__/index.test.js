@@ -6,11 +6,11 @@ import About from '..';
 afterEach(cleanup);
 
 describe('About component', () => {
-    // First Baseline aka 'Render' Test to verify that the component is rendering.
+    // First Baseline aka 'Render Test' to verify that the component is rendering.
     it('renders', () => {
         render(<About />);
     });
-    // Second 'Test Case' aka 'Snapshot' Test to verify that the expected and actual outcomes match.
+    // Second Test Case aka 'Snapshot Test' to verify that the expected and actual outcomes match.
     it('matches snapshot DOM node structure', () => {
         // render About
         const { asFragment } = render(<About />);
