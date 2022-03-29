@@ -10,5 +10,5 @@ describe('About component', () => {
     it('renders', () => {
         render(<About />);
     });
-    // Second Test
+    // Second 'Test Case' aka 'Snapshot' Test to verify that the expected and actual outcomes match.
 })
