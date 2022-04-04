@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import photo from '../../assets/small/commercial/0.jpg';
 
-
 const PhotoList = ({ category }) => {
     const [photos] = useState([
         {
@@ -100,6 +99,8 @@ const PhotoList = ({ category }) => {
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
         },
     ]);
+
+    const currentPhotos = photos.filter((photo) => photo.category === category);
 
     return (
         <div>
