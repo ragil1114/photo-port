@@ -1,13 +1,16 @@
 import React from 'react';
-import coverImage from "../../assets/cover/cover-image.jpg";
+import PhotoList from '../PhotoList';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function About() {
-    return (
-      <section className='my-5'>
-        <h1 id="about">Who am I?</h1>
-        <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
-      </section>
-    );
+function Gallery(props) {
+  const { currentCategory } = props;
+  return (
+    <section>
+      <h1 data-testid="h1tag">{capitalizeFirstLetter(currentCategory.name)}</h1>
+      <p>{currentCategory.description}</p>
+      <PhotoList category={currentCategory.name} />
+    </section>
+  );
 }
-  
-export default About;
+
+export default Gallery;
