@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import photo from '../../assets/small/commercial/0.jpg';
 
 const PhotoList = ({ category }) => {
   const [photos] = useState([
