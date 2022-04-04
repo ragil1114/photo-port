@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import photo from '../../assets/small/commercial/0.jpg';
 
 
-function PhotoList() {
+const PhotoList = ({ category }) => {
     const [photos] = useState([
         {
           name: 'Grocery aisle',
