@@ -101,14 +101,20 @@ function PhotoList() {
         },
     ]);
 
-  return (
-    <div>
-        <img
-          src={photo}
-          alt="Commercial Example"
-        />
-    </div>
-  )
+    return (
+        <div>
+          <div className="flex-row">
+            {photos.map((image, i) => (
+              <img
+                src={require(`../../assets/small/${category}/${i}.jpg`).default}
+                alt={image.name}
+                className="img-thumbnail mx-1"
+                key={image.name}
+              />
+            ))}
+          </div>
+        </div>
+    );
 }
 
 export default PhotoList;
