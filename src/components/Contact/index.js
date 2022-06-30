@@ -6,6 +6,10 @@ function ContactForm() {
   
   const { name, email, message } = formState;
 
+  function handleChange(e) {
+    setFormState({...formState, name: e.target.value })
+  }
+
     return (
         <section>
           <h1>Contact me</h1>
